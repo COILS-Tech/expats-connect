@@ -20,5 +20,5 @@ export const siteSettings: SiteSettings = {
     nationalities: "35+",
     yearsActive: "<1",
   },
-  adminPassword: "admin2026",
+  adminPassword: "Legacy@101",
 };

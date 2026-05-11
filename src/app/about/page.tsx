@@ -33,27 +33,6 @@ export default function AboutPage() {
     },
   ];
 
-  const team = [
-    {
-      name: "Christian Chime",
-      role: "Founder & Community Lead",
-      from: "Originally from Nigeria",
-      bio: "Chris moved to Amsterdam in 2023 and found the expat experience to be equal parts exciting and isolating. He founded Expats Connect to create the community he wished had existed when he arrived.",
-    },
-    {
-      name: "Adaeze Okeke",
-      role: "Events Coordinator",
-      from: "Dutch-Nigerian",
-      bio: "Ada has a passion for bringing people together. With experience in both community building and event management, she makes every Expats Connect event feel effortless.",
-    },
-    {
-      name: "Samuel A",
-      role: "Resources & Content Lead",
-      from: "Originally from Nigeria",
-      bio: "Sam spent his first six months in Rotterdam navigating Dutch bureaucracy alone. Now he writes practical guides to make the journey easier for every newcomer who comes after him.",
-    },
-  ];
-
   return (
     <div className="min-h-screen bg-brand-cream">
       {/* Hero */}
@@ -156,38 +135,6 @@ export default function AboutPage() {
               </div>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* Team */}
-      <section className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <div className="text-center mb-12">
-          <span className="text-xs font-bold uppercase tracking-widest text-brand-orange mb-3 block">
-            The People Behind It
-          </span>
-          <h2 className="font-display text-3xl font-bold text-brand-navy">
-            Meet the Team
-          </h2>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-7">
-          {team.map((member) => (
-            <div
-              key={member.name}
-              className="bg-white rounded-2xl p-7 shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
-            >
-              <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-brand-orange to-brand-gold flex items-center justify-center text-white font-bold text-xl mb-4">
-                {member.name.charAt(0)}
-              </div>
-              <h3 className="font-display font-bold text-brand-navy text-lg">
-                {member.name}
-              </h3>
-              <p className="text-brand-orange text-xs font-semibold uppercase tracking-wider mt-0.5 mb-1">
-                {member.role}
-              </p>
-              <p className="text-gray-400 text-xs mb-3">{member.from}</p>
-              <p className="text-gray-600 text-sm leading-relaxed">{member.bio}</p>
-            </div>
-          ))}
         </div>
       </section>
 
